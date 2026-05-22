@@ -2,9 +2,10 @@ import FadeIn from "../components/FadeIn";
 import SectionHeading from "../components/SectionHeading";
 
 const markets = [
+  "Small Businesses",
+  "Retailers & Shops",
   "Schools & Universities",
   "NGOs & Scholarship Bodies",
-  "Small Businesses",
   "African Markets",
   "South Asian Markets",
 ];
@@ -15,18 +16,20 @@ function About() {
       <FadeIn>
         <SectionHeading
           title="About OrgTree Systems"
-          subtitle="We build digital infrastructure for institutions and organisations across Africa and South Asia."
+          subtitle="Most businesses across Africa and South Asia are invisible online — even when their service is excellent. We fix that."
         />
       </FadeIn>
 
       <FadeIn delay={0.1}>
         <div className="theme-card rounded-[32px] p-8 sm:p-12 backdrop-blur-xl">
           <p className="leading-relaxed theme-text-secondary text-lg">
-            OrgTree Systems designs and builds websites, content management platforms, and full
-            institutional systems for schools, organisations, and growing businesses. Our flagship
-            product — OrgTree — gives institutions a live interactive map of their entire hierarchy,
-            communication system, and campus infrastructure. We also build standalone client websites
-            and managed platforms tailored to each institution's needs and budget.
+            Potential clients are searching online right now for what you offer. If your business
+            does not have a fast, credible website — they find your competitor instead. OrgTree
+            Systems builds websites, managed platforms, and full digital systems for small
+            businesses, schools, and organisations across Africa and South Asia. We scope every
+            project to your actual budget and needs, and build it to work on African networks.
+            Whether you need a $50 launch site or a complete management platform — we have done it,
+            and we can do it for you.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {markets.map((tag) => (

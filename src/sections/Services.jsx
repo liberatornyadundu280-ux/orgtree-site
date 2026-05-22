@@ -3,28 +3,46 @@ import SectionHeading from "../components/SectionHeading";
 
 const tiers = [
   {
-    badge: "Tier 1",
-    name: "Web Presence",
+    badge: "Starter",
+    name: "Launch Site",
     price: "From $50",
-    desc: "A professional 1-page website. Fast, mobile-first, works on 2G connections. Your institution online in one week.",
-    detail: "No admin needed. You send updates, we deploy.",
+    desc: "Your business gets a professional website — fast, mobile-first, and built to work on any connection. Live within a week.",
+    detail: "No tech knowledge needed. You send updates, we handle the rest.",
     highlight: false,
   },
   {
-    badge: "Tier 2",
-    name: "Managed Website",
+    badge: "Most Popular",
+    name: "Managed Site",
     price: "From $150 + $25/mo",
-    desc: "A website your team updates themselves. Add news, events, staff, and announcements without touching code.",
-    detail: "One staff member, 30 minutes of training, live content.",
+    desc: "Your team updates the site themselves — add news, events, staff, and announcements without writing a line of code.",
+    detail: "One person. Thirty minutes of training. Live content.",
     highlight: true,
   },
   {
-    badge: "Tier 3",
-    name: "Institutional Platform",
+    badge: "Enterprise",
+    name: "Full Platform",
     price: "From $800",
-    desc: "Full management system. Staff directory, notifications, parent portals, achievements, and org hierarchy. Built on OrgTree.",
-    detail: "Custom-built for your institution's structure.",
+    desc: "A complete digital system — staff directory, notifications, portals, and org hierarchy. Built on OrgTree and shaped to your structure.",
+    detail: "Custom-built for your specific structure.",
     highlight: false,
+  },
+];
+
+const steps = [
+  {
+    number: "01",
+    title: "Scope",
+    desc: "A free 30-minute call. We learn your business, goals, and budget — and tell you exactly what we'd build.",
+  },
+  {
+    number: "02",
+    title: "Build",
+    desc: "We design and develop. You review, request changes, and approve before anything goes live.",
+  },
+  {
+    number: "03",
+    title: "Launch",
+    desc: "Your site goes live. We hand over everything — logins, training, and ongoing support if you need it.",
   },
 ];
 
@@ -34,8 +52,26 @@ function Services() {
       <FadeIn>
         <SectionHeading
           title="Services"
-          subtitle="Three ways we help institutions establish and grow their digital presence."
+          subtitle="Three ways we help businesses and institutions get online and stay ahead."
         />
+      </FadeIn>
+
+      {/* How it works */}
+      <FadeIn delay={0.05}>
+        <div className="mb-12">
+          <p className="text-xs font-bold tracking-widest uppercase text-[#C8A95B]/50 mb-6">
+            How it works
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {steps.map((step) => (
+              <div key={step.number} className="flex flex-col gap-2">
+                <span className="text-3xl font-bold text-[#C8A95B]/20">{step.number}</span>
+                <h4 className="font-semibold theme-text-primary text-sm">{step.title}</h4>
+                <p className="text-xs theme-text-secondary leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </FadeIn>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

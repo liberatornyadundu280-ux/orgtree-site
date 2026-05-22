@@ -33,8 +33,8 @@ function Contact() {
     <section id="contact" className="relative py-32 max-w-5xl mx-auto px-4 sm:px-6">
       <FadeIn>
         <SectionHeading
-          title="Get in Touch"
-          subtitle="Tell us about your institution or project. We will come back to you within 2 business days."
+          title="Let's Talk About Your Project"
+          subtitle="Tell us about your business or project. We will come back to you within 2 business days."
         />
       </FadeIn>
 
@@ -57,8 +57,8 @@ function Contact() {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <p className="theme-text-secondary leading-relaxed mb-6">
-                Whether you need a brochure site, a managed platform, or a full institutional
-                system — tell us where you are and what you are trying to build.
+                Whether you need a launch site, a managed platform, or a full digital system —
+                tell us where you are and what you are trying to build.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -76,12 +76,12 @@ function Contact() {
                 </div>
                 <div>
                   <label className="block text-xs text-[#C8A95B]/70 uppercase tracking-wider mb-2">
-                    Institution
+                    Business / Organisation
                   </label>
                   <input
                     type="text"
-                    name="institution"
-                    placeholder="Your school or organisation"
+                    name="organisation"
+                    placeholder="Your business or organisation"
                     className="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:border-[#C8A95B]/50 focus:outline-none text-sm transition-colors placeholder:text-white/20"
                   />
                 </div>
@@ -108,7 +108,7 @@ function Contact() {
                   name="message"
                   required
                   rows={5}
-                  placeholder="Tell us about your institution — what you currently have and what you need."
+                  placeholder="Tell us about your business — what you currently have and what you need."
                   className="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:border-[#C8A95B]/50 focus:outline-none text-sm transition-colors resize-none placeholder:text-white/20"
                 />
               </div>

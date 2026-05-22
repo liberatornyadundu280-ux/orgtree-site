@@ -37,7 +37,7 @@ function Hero() {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="mt-4 text-4xl sm:text-5xl md:text-6xl font-bold tracking-wide text-[#C8A95B]"
       >
-        Digital Infrastructure<br className="hidden sm:block" /> for Institutions.
+        Digital Infrastructure<br className="hidden sm:block" /> for Businesses & Institutions.
       </motion.h1>
 
       <motion.p
@@ -46,7 +46,7 @@ function Hero() {
         transition={{ duration: 0.5, delay: 0.42 }}
         className="mt-4 text-sm text-white/40 tracking-wide"
       >
-        Websites · Managed Platforms · Institutional Systems
+        Websites · Managed Platforms · Digital Systems
       </motion.p>
 
       {/* CTAs */}
@@ -60,13 +60,13 @@ function Hero() {
           href="#services"
           className="px-7 py-3 rounded-full bg-[#C8A95B] text-black font-semibold hover:opacity-90 transition"
         >
-          View Services
+          See What We Build
         </a>
         <a
           href="#contact"
           className="flex items-center gap-2 px-7 py-3 rounded-full border border-[#C8A95B]/50 text-[#C8A95B] font-medium hover:bg-[#C8A95B]/10 transition-colors duration-200"
         >
-          Get in Touch
+          Let's Talk
         </a>
       </motion.div>
     </section>

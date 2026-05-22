@@ -55,7 +55,7 @@ function Footer() {
               <span className="text-base font-semibold text-[#C8A95B]">OrgTree Systems</span>
             </div>
             <p className="text-xs text-white/30 max-w-[240px] leading-relaxed">
-              Digital infrastructure for institutions across Africa and South Asia.
+              Professional websites and digital systems for businesses across Africa and South Asia.
             </p>
           </div>
 
