@@ -5,7 +5,8 @@ const tiers = [
   {
     badge: "Starter",
     name: "Launch Site",
-    price: "From $50",
+    price: "$25 – $50",
+    priceNote: "Lower end if your content is ready. Higher if we source images, write copy, or build extra sections.",
     desc: "Your business gets a professional website — fast, mobile-first, and built to work on any connection. Live within a week.",
     detail: "No tech knowledge needed. You send updates, we handle the rest.",
     highlight: false,
@@ -13,7 +14,8 @@ const tiers = [
   {
     badge: "Most Popular",
     name: "Managed Site",
-    price: "From $150 + $25/mo",
+    price: "$80 – $150 + $15/mo",
+    priceNote: "Depends on number of pages, content types, and depth of CMS customisation. Monthly covers hosting and maintenance.",
     desc: "Your team updates the site themselves — add news, events, staff, and announcements without writing a line of code.",
     detail: "One person. Thirty minutes of training. Live content.",
     highlight: true,
@@ -21,7 +23,8 @@ const tiers = [
   {
     badge: "Enterprise",
     name: "Full Platform",
-    price: "From $800",
+    price: "$500 – $900",
+    priceNote: "Depends on organisation size, number of modules, and whether multiple portals (staff, parent, admin) are needed.",
     desc: "A complete digital system — staff directory, notifications, portals, and org hierarchy. Built on OrgTree and shaped to your structure.",
     detail: "Custom-built for your specific structure.",
     highlight: false,
@@ -92,6 +95,7 @@ function Services() {
               </span>
               <h3 className="text-xl font-bold theme-text-primary">{s.name}</h3>
               <p className="text-[#C8A95B] font-semibold text-sm">{s.price}</p>
+              <p className="text-[10px] text-white/35 leading-relaxed -mt-1">{s.priceNote}</p>
               <p className="text-sm theme-text-secondary leading-relaxed">{s.desc}</p>
               <p className="text-xs text-white/30 italic mt-auto pt-3 border-t border-white/5">
                 {s.detail}
@@ -108,8 +112,11 @@ function Services() {
             <p className="text-xs theme-text-secondary mt-1">
               Your team builds. We design the system — database schema, API structure, role model, deployment strategy.
             </p>
+            <p className="text-[10px] text-white/35 mt-1">
+              $80 for a focused 1–2hr session · $150 for complex systems with full documentation.
+            </p>
           </div>
-          <span className="text-[#C8A95B] font-semibold text-sm whitespace-nowrap">From $200</span>
+          <span className="text-[#C8A95B] font-semibold text-sm whitespace-nowrap">$80 – $150</span>
         </div>
       </FadeIn>
     </section>

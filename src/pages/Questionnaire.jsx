@@ -269,7 +269,7 @@ function StepBudget({ d, u }) {
     <div className="flex flex-col gap-6">
       <Field label="What's your budget range? *">
         <RadioCards
-          options={["Under $100", "$100 – $300", "$300 – $800", "$800 – $2,000", "$2,000+", "Not sure yet — please advise me"]}
+          options={["Under $50", "$50 – $150", "$150 – $500", "$500 – $900", "$900+", "Not sure yet — please advise me"]}
           selected={d.budget}
           onChange={(v) => u("budget", v)}
         />
