@@ -6,6 +6,7 @@ const tiers = [
     badge: "Starter",
     name: "Launch Site",
     price: "$25 – $50",
+    priceINR: "₹2,000 – ₹4,200",
     priceNote: "Lower end if your content is ready. Higher if we source images, write copy, or build extra sections.",
     desc: "Your business gets a professional website — fast, mobile-first, and built to work on any connection. Live within a week.",
     detail: "No tech knowledge needed. You send updates, we handle the rest.",
@@ -15,6 +16,7 @@ const tiers = [
     badge: "Most Popular",
     name: "Managed Site",
     price: "$80 – $150 + $15/mo",
+    priceINR: "₹6,700 – ₹12,600 + ₹1,260/mo",
     priceNote: "Depends on number of pages, content types, and depth of CMS customisation. Monthly covers hosting and maintenance.",
     desc: "Your team updates the site themselves — add news, events, staff, and announcements without writing a line of code.",
     detail: "One person. Thirty minutes of training. Live content.",
@@ -24,6 +26,7 @@ const tiers = [
     badge: "Enterprise",
     name: "Full Platform",
     price: "$500 – $900",
+    priceINR: "₹42,000 – ₹75,600",
     priceNote: "Depends on organisation size, number of modules, and whether multiple portals (staff, parent, admin) are needed.",
     desc: "A complete digital system — staff directory, notifications, portals, and org hierarchy. Built on OrgTree and shaped to your structure.",
     detail: "Custom-built for your specific structure.",
@@ -95,6 +98,7 @@ function Services() {
               </span>
               <h3 className="text-xl font-bold theme-text-primary">{s.name}</h3>
               <p className="text-[#C8A95B] font-semibold text-sm">{s.price}</p>
+              <p className="text-[11px] text-[#C8A95B]/40 -mt-2">{s.priceINR}</p>
               <p className="text-[10px] text-white/35 leading-relaxed -mt-1">{s.priceNote}</p>
               <p className="text-sm theme-text-secondary leading-relaxed">{s.desc}</p>
               <p className="text-xs text-white/30 italic mt-auto pt-3 border-t border-white/5">
@@ -116,7 +120,10 @@ function Services() {
               $80 for a focused 1–2hr session · $150 for complex systems with full documentation.
             </p>
           </div>
-          <span className="text-[#C8A95B] font-semibold text-sm whitespace-nowrap">$80 – $150</span>
+          <div className="text-right whitespace-nowrap">
+            <p className="text-[#C8A95B] font-semibold text-sm">$80 – $150</p>
+            <p className="text-[11px] text-[#C8A95B]/40">₹6,700 – ₹12,600</p>
+          </div>
         </div>
       </FadeIn>
     </section>
