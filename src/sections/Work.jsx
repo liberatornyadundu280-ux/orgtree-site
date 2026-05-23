@@ -11,12 +11,12 @@ const projects = [
     status: "Live",
   },
   {
-    label: "Client Demo",
+    label: "Client Site",
     name: "Greenhoods High School",
-    desc: "Static brochure site built for a Zimbabwean secondary school. Mobile-first, event-filtered gallery, zero-dependency deployment.",
+    desc: "Full school website for a Zimbabwean secondary school — academic programmes, news & events, staff directory, admissions form, and event-filtered gallery. Mobile-first, zero-dependency deployment.",
     tags: ["HTML", "CSS", "Vanilla JS"],
-    href: null,
-    status: "Demo",
+    href: "https://enchanting-gumdrop-80dbf6.netlify.app/",
+    status: "Live",
   },
 ];
 
